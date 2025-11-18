@@ -1,6 +1,6 @@
 # SkillSwapHub 🎓✨
 
-> **"Teach what you know. Learn what you need. Swap skills. Grow together."**
+> Teach what you know. Learn what you need. Swap skills. Grow together.
 
 SkillSwapHub is a peer-to-peer skill-exchange platform where users trade their time and expertise rather than pay money. The platform facilitates matchmaking, communication, resource sharing, and recognition (via badges and analytics) to build a community of reciprocal learning and teaching.
 
