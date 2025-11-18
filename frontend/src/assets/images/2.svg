@@ -1,0 +1,21 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Circle -->
+  <circle cx="100" cy="100" r="95" fill="#D1D5DB" stroke="#9CA3AF" stroke-width="3"/>
+  
+  <!-- Middle Circle -->
+  <circle cx="100" cy="100" r="75" fill="#E5E7EB" stroke="#D1D5DB" stroke-width="2"/>
+  
+  <!-- Inner Badge Shape -->
+  <path d="M100 35 L115 70 L152 75 L126 100 L133 137 L100 120 L67 137 L74 100 L48 75 L85 70 Z" 
+        fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2"/>
+  
+  <!-- Center Star -->
+  <path d="M100 60 L107 80 L128 83 L114 97 L118 118 L100 108 L82 118 L86 97 L72 83 L93 80 Z" 
+        fill="#9CA3AF"/>
+  
+  <!-- Ribbon -->
+  <rect x="85" y="145" width="30" height="40" fill="#D1D5DB" rx="2"/>
+  
+  <!-- Shine Effect -->
+  <circle cx="80" cy="70" r="15" fill="#FFFFFF" opacity="0.3"/>
+</svg>

@@ -1,0 +1,389 @@
+/* ===================================
+   ACHIEVEMENTS PAGE LAYOUT
+   =================================== */
+
+.achievements-container {
+  flex: 1;
+  padding: 40px 48px;
+  background: #F8FAFC;
+  overflow-y: auto;
+}
+
+/* ===================================
+   PAGE HEADER
+   =================================== */
+
+.achievements-header {
+  margin-bottom: 32px;
+}
+
+.achievements-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.achievements-subtitle {
+  font-size: 15px;
+  color: #6B7280;
+  line-height: 1.5;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+/* ===================================
+   PROGRESS SECTION
+   =================================== */
+
+.progress-section {
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.progress-bar-container {
+  margin-bottom: 28px;
+}
+
+.progress-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.progress-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.progress-percentage {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2563EB;
+}
+
+.progress-bar-track {
+  width: 100%;
+  height: 12px;
+  background: #E5E7EB;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2563EB 0%, #3B82F6 100%);
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+/* ===================================
+   PROGRESS METRICS
+   =================================== */
+
+.progress-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.metric-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px;
+  background: #F9FAFB;
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+  transition: all 0.2s;
+}
+
+.metric-card:hover {
+  background: #EFF6FF;
+  border-color: #BFDBFE;
+}
+
+.metric-icon {
+  font-size: 28px;
+  color: #2563EB;
+  flex-shrink: 0;
+}
+
+.metric-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metric-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ===================================
+   BADGES SECTION
+   =================================== */
+
+.badges-section {
+  margin-bottom: 32px;
+}
+
+.section-header-with-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.badge-filters {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid #D1D5DB;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6B7280;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  background: #F3F4F6;
+  border-color: #9CA3AF;
+}
+
+.filter-btn.active {
+  background: #2563EB;
+  border-color: #2563EB;
+  color: white;
+}
+
+/* ===================================
+   BADGE GRID
+   =================================== */
+
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ===================================
+   BADGE CARD
+   =================================== */
+
+.badge-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  padding: 32px 28px 36px 28px;
+  text-align: center;
+  transition: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  min-height: 320px;
+}
+
+.badge-card:hover {
+  border-color: #E5E7EB;
+}
+
+.badge-card.unlocked {
+  border-width: 1px;
+}
+
+.badge-card.locked {
+  opacity: 0.5;
+  filter: grayscale(0.7);
+}
+
+.badge-card.locked:hover {
+  opacity: 0.5;
+}
+
+/* ===================================
+   BADGE CONTENT
+   =================================== */
+
+.badge-icon {
+  font-size: 72px;
+  margin-top: 8px;
+  margin-bottom: 56px;
+  transition: none;
+  flex-shrink: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.badge-card:hover .badge-icon {
+  transform: none;
+}
+
+.badge-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 14px;
+  margin-top: 0;
+  padding-top: 16px;
+  line-height: 1.2;
+}
+
+.badge-description {
+  font-size: 15px;
+  color: #6B7280;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 32px;
+  padding: 0 12px;
+  min-height: auto;
+  text-align: center;
+}
+
+.badge-earned {
+  font-size: 13px;
+  font-weight: 600;
+  color: #10B981;
+  padding: 8px 16px;
+  background: rgba(16, 185, 129, 0.08);
+  border-radius: 8px;
+  margin-top: 0;
+}
+
+.badge-locked-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #9CA3AF;
+  padding: 8px 16px;
+  background: #F3F4F6;
+  border-radius: 8px;
+  margin-top: 0;
+}
+
+/* ===================================
+   STREAKS SECTION
+   =================================== */
+
+.streaks-section {
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.streak-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.streak-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  background: #F9FAFB;
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+  transition: all 0.2s;
+}
+
+.streak-card:hover {
+  background: #EFF6FF;
+  border-color: #BFDBFE;
+}
+
+.streak-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.streak-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2563EB;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+@media (max-width: 1400px) {
+  .badge-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .progress-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .streak-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievements-container {
+    padding: 24px 20px;
+  }
+  
+  .achievements-title {
+    font-size: 24px;
+  }
+  
+  .section-header-with-filter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .badge-filters {
+    width: 100%;
+  }
+  
+  .filter-btn {
+    flex: 1;
+  }
+  
+  .badge-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .progress-metrics {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,224 @@
+/* Requests Page Styles */
+
+.requests-container {
+  @apply flex-1 p-8 bg-gray-50;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Header */
+.requests-header {
+  @apply mb-8;
+}
+
+.page-title {
+  @apply text-3xl font-bold text-gray-900 mb-2;
+}
+
+.page-subtitle {
+  @apply text-base text-gray-500;
+}
+
+/* Empty State */
+.empty-state {
+  @apply bg-white rounded-2xl border border-gray-200 p-16 text-center;
+}
+
+.empty-icon {
+  @apply w-16 h-16 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 text-2xl;
+}
+
+.empty-title {
+  @apply text-xl font-bold text-gray-900 mb-2;
+}
+
+.empty-text {
+  @apply text-base text-gray-500 mb-6 max-w-md mx-auto;
+}
+
+.empty-action {
+  @apply inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl;
+  @apply hover:bg-blue-700 transition-colors;
+}
+
+/* Requests List */
+.requests-list {
+  @apply space-y-4;
+}
+
+/* Request Card */
+.request-card {
+  @apply bg-white rounded-2xl border border-gray-200 p-6;
+}
+
+.request-header {
+  @apply flex items-center justify-between mb-6 pb-6 border-b border-gray-200;
+}
+
+.request-user {
+  @apply flex items-center gap-4;
+}
+
+.request-avatar {
+  @apply w-14 h-14 rounded-full;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.request-user-info {
+  @apply flex flex-col;
+}
+
+.request-name {
+  @apply text-lg font-bold text-gray-900;
+}
+
+.request-username {
+  @apply text-sm text-gray-500;
+}
+
+.request-time {
+  @apply text-sm text-gray-400;
+}
+
+/* Request Body */
+.request-body {
+  @apply space-y-4 mb-6;
+}
+
+.request-section {
+  @apply space-y-1;
+}
+
+.request-label {
+  @apply text-sm font-semibold text-gray-500 uppercase tracking-wide;
+}
+
+.request-text {
+  @apply text-base text-gray-700 leading-relaxed;
+}
+
+.request-text-highlight {
+  @apply text-base font-semibold text-blue-600;
+}
+
+/* Request Actions */
+.request-actions {
+  @apply flex items-center gap-3 pt-6 border-t border-gray-200;
+}
+
+.btn-decline {
+  @apply flex-1 flex items-center justify-center gap-2 px-5 py-3 bg-white border-2 border-gray-300 text-gray-700 font-semibold rounded-xl;
+  @apply hover:bg-gray-50 transition-colors;
+}
+
+.btn-counter-offer {
+  @apply flex-1 flex items-center justify-center gap-2 px-5 py-3 bg-white border-2 border-blue-600 text-blue-600 font-semibold rounded-xl;
+  @apply hover:bg-blue-50 transition-colors;
+}
+
+.btn-accept {
+  @apply flex-1 flex items-center justify-center gap-2 px-5 py-3 bg-blue-600 text-white font-semibold rounded-xl;
+  @apply hover:bg-blue-700 transition-colors shadow-sm;
+}
+
+.btn-icon {
+  @apply text-sm;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .requests-container {
+    @apply p-5;
+  }
+
+  .request-card {
+    @apply p-5;
+  }
+
+  .request-header {
+    @apply flex-col items-start gap-3;
+  }
+
+  .request-time {
+    @apply self-end;
+  }
+
+  .request-actions {
+    @apply flex-col;
+  }
+
+  .btn-decline,
+  .btn-accept {
+    @apply w-full;
+  }
+
+  .empty-state {
+    @apply p-10;
+  }
+}
+
+/* Counter Offer Section */
+.counter-offer-section {
+  @apply mt-6 pt-6 border-t-2 border-blue-100 bg-blue-50 rounded-xl p-5;
+}
+
+.counter-offer-header {
+  @apply mb-4;
+}
+
+.counter-offer-title {
+  @apply text-lg font-bold text-gray-900 mb-1;
+}
+
+.counter-offer-subtitle {
+  @apply text-sm text-gray-600;
+}
+
+.counter-offer-form {
+  @apply space-y-4;
+}
+
+.form-group {
+  @apply space-y-2;
+}
+
+.form-label {
+  @apply block text-sm font-semibold text-gray-700;
+}
+
+.required {
+  @apply text-red-500;
+}
+
+.form-input {
+  @apply w-full px-4 py-3 border border-gray-300 rounded-xl text-sm bg-white;
+  @apply focus:outline-none;
+  @apply transition-all;
+}
+
+.form-input.error {
+  @apply border-red-500;
+}
+
+.form-input::placeholder {
+  @apply text-gray-400;
+}
+
+.error-message {
+  @apply text-xs text-red-500 mt-1 block;
+}
+
+.counter-offer-actions {
+  @apply flex items-center gap-3 pt-4;
+}
+
+.btn-cancel-small {
+  @apply flex-1 px-4 py-2.5 text-sm font-semibold text-gray-700 bg-white border border-gray-300 rounded-xl;
+  @apply hover:bg-gray-50 transition-colors;
+}
+
+.btn-submit-small {
+  @apply flex-1 px-4 py-2.5 text-sm font-semibold text-white bg-blue-600 rounded-xl;
+  @apply hover:bg-blue-700 transition-colors shadow-sm;
+}

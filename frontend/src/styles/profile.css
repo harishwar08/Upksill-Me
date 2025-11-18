@@ -1,0 +1,599 @@
+/* ===================================
+   PROFILE PAGE LAYOUT
+   =================================== */
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  min-height: calc(100vh - 88px);
+  background-color: #F8FAFC;
+}
+
+/* ===================================
+   LEFT SIDEBAR NAVIGATION
+   =================================== */
+
+.profile-sidebar {
+  background: #FFFFFF;
+  border-right: 1px solid #E5E7EB;
+  padding: 32px 0;
+  overflow-y: auto;
+}
+
+.sidebar-section {
+  margin-bottom: 32px;
+  padding: 0 24px;
+}
+
+.sidebar-section-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9CA3AF;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  padding: 0 12px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4B5563;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  text-align: left;
+}
+
+.sidebar-nav-item:hover {
+  background: #F3F4F6;
+  color: #2563EB;
+}
+
+.sidebar-nav-item.active {
+  background: #EFF6FF;
+  color: #2563EB;
+  font-weight: 600;
+}
+
+.sidebar-nav-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.sidebar-danger {
+  margin-top: 40px;
+  padding: 0 24px;
+}
+
+.btn-delete-account {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #DC2626;
+  background: #FEF2F2;
+  border: 1px solid #FEE2E2;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-delete-account:hover {
+  background: #FEE2E2;
+  border-color: #FECACA;
+}
+
+/* ===================================
+   MAIN PROFILE CONTENT
+   =================================== */
+
+.profile-content {
+  padding: 40px 48px;
+  overflow-y: auto;
+  max-height: calc(100vh - 88px);
+}
+
+.profile-header {
+  margin-bottom: 32px;
+}
+
+.profile-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.profile-subtitle {
+  font-size: 15px;
+  color: #6B7280;
+  line-height: 1.5;
+}
+
+/* ===================================
+   PROFILE CARDS
+   =================================== */
+
+.profile-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #F3F4F6;
+}
+
+/* ===================================
+   AVATAR SECTION
+   =================================== */
+
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+}
+
+.avatar-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #BFDBFE;
+}
+
+.avatar-icon {
+  font-size: 48px;
+  color: #2563EB;
+}
+
+.btn-upload {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2563EB;
+  background: #FFFFFF;
+  border: 2px solid #2563EB;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-upload:hover {
+  background: #EFF6FF;
+}
+
+.btn-icon {
+  font-size: 14px;
+}
+
+.avatar-note {
+  font-size: 13px;
+  color: #9CA3AF;
+  text-align: center;
+  max-width: 280px;
+  line-height: 1.5;
+}
+
+/* ===================================
+   FORM ELEMENTS
+   =================================== */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  display: flex;
+  align-items: center;
+}
+
+.form-input {
+  padding: 12px 16px;
+  font-size: 15px;
+  color: #111827;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  background: #FFFFFF;
+}
+
+.form-input:disabled {
+  background: #F3F4F6;
+  color: #6B7280;
+  cursor: not-allowed;
+  border: 1px solid #E5E7EB;
+}
+
+.form-textarea {
+  padding: 12px 16px;
+  font-size: 15px;
+  color: #111827;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.form-textarea:focus {
+  outline: none;
+  background: #FFFFFF;
+}
+
+.form-textarea:disabled {
+  background: #F3F4F6;
+  color: #6B7280;
+  cursor: not-allowed;
+}
+
+/* Section Title within forms */
+.form-section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+/* ===================================
+   SKILL TAGS
+   =================================== */
+
+.skill-tags-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  min-height: 52px;
+}
+
+.skill-tag-blue {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2563EB;
+  background: #EFF6FF;
+  border: 1px solid #BFDBFE;
+  border-radius: 8px;
+}
+
+.skill-tag-purple {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #7C3AED;
+  background: #F5F3FF;
+  border: 1px solid #DDD6FE;
+  border-radius: 8px;
+}
+
+/* ===================================
+   BUTTONS
+   =================================== */
+
+.btn-edit {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2563EB;
+  background: transparent;
+  border: 1px solid #BFDBFE;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-edit:hover {
+  background: #EFF6FF;
+  border-color: #2563EB;
+}
+
+.btn-icon-sm {
+  font-size: 13px;
+}
+
+.btn-save {
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: #2563EB;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-save:hover {
+  background: #1E40AF;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-cancel {
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6B7280;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-cancel:hover {
+  background: #F3F4F6;
+  border-color: #9CA3AF;
+}
+
+/* ===================================
+   RIGHT PROGRESS PANEL
+   =================================== */
+
+.profile-progress-panel {
+  background: #FFFFFF;
+  border-left: 1px solid #E5E7EB;
+  padding: 40px 28px;
+  overflow-y: auto;
+  max-height: calc(100vh - 88px);
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* ===================================
+   CIRCULAR PROGRESS
+   =================================== */
+
+.progress-circle-container {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 36px;
+}
+
+.progress-circle {
+  width: 140px;
+  height: 140px;
+  transform: rotate(-90deg);
+}
+
+.progress-circle-bg {
+  fill: none;
+  stroke: #E5E7EB;
+  stroke-width: 8;
+}
+
+.progress-circle-fill {
+  fill: none;
+  stroke: #10B981;
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.progress-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: 700;
+  color: #10B981;
+}
+
+/* ===================================
+   PROGRESS CHECKLIST
+   =================================== */
+
+.progress-checklist {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-item-check {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+  background: #F3F4F6;
+  color: #9CA3AF;
+}
+
+.progress-item:has(.progress-item-label.completed) .progress-item-check {
+  background: #D1FAE5;
+  color: #10B981;
+}
+
+.progress-item-label {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: #9CA3AF;
+}
+
+.progress-item-label.completed {
+  color: #374151;
+}
+
+.progress-item-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #9CA3AF;
+}
+
+.progress-item-value.completed {
+  color: #10B981;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+@media (max-width: 1400px) {
+  .profile-layout {
+    grid-template-columns: 260px 1fr 280px;
+  }
+  
+  .profile-content {
+    padding: 32px 36px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .profile-layout {
+    grid-template-columns: 240px 1fr;
+  }
+  
+  .profile-progress-panel {
+    display: none;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile-sidebar {
+    display: none;
+  }
+  
+  .profile-content {
+    padding: 24px 20px;
+  }
+  
+  .profile-title {
+    font-size: 24px;
+  }
+  
+  .profile-card {
+    padding: 20px;
+  }
+}
+
+/* ===================================
+   ANIMATIONS
+   =================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-card {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.profile-card:nth-child(1) { animation-delay: 0.05s; }
+.profile-card:nth-child(2) { animation-delay: 0.1s; }
+.profile-card:nth-child(3) { animation-delay: 0.15s; }
+.profile-card:nth-child(4) { animation-delay: 0.2s; }
+.profile-card:nth-child(5) { animation-delay: 0.25s; }
+.profile-card:nth-child(6) { animation-delay: 0.3s; }

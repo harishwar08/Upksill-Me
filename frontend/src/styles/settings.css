@@ -1,0 +1,382 @@
+/* ===================================
+   SETTINGS PAGE LAYOUT
+   =================================== */
+
+.settings-container {
+  flex: 1;
+  padding: 40px 48px;
+  background: #F8FAFC;
+  overflow-y: auto;
+}
+
+/* ===================================
+   PAGE HEADER
+   =================================== */
+
+.settings-header {
+  margin-bottom: 32px;
+}
+
+.settings-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.settings-subtitle {
+  font-size: 15px;
+  color: #6B7280;
+  line-height: 1.5;
+}
+
+/* ===================================
+   SETTINGS CARD
+   =================================== */
+
+.settings-card {
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.header-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #EFF6FF;
+  border-radius: 12px;
+  font-size: 22px;
+  color: #2563EB;
+  flex-shrink: 0;
+}
+
+.card-header > div:not(.header-icon) {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #6B7280;
+  line-height: 1.5;
+}
+
+/* ===================================
+   SETTINGS GROUP
+   =================================== */
+
+.settings-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.setting-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.setting-item.full-width {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.setting-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.setting-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.setting-sublabel {
+  font-size: 13px;
+  color: #6B7280;
+  line-height: 1.4;
+}
+
+/* ===================================
+   TOGGLE SWITCH
+   =================================== */
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #D1D5DB;
+  transition: 0.3s;
+  border-radius: 26px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background-color: #2563EB;
+}
+
+.toggle-switch input:checked + .toggle-slider:before {
+  transform: translateX(22px);
+}
+
+.toggle-switch:hover .toggle-slider {
+  background-color: #9CA3AF;
+}
+
+.toggle-switch input:checked:hover + .toggle-slider {
+  background-color: #1E40AF;
+}
+
+/* ===================================
+   SELECT DROPDOWN
+   =================================== */
+
+.setting-select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #D1D5DB;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #111827;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.setting-select:hover {
+  border-color: #9CA3AF;
+}
+
+.setting-select:focus {
+  outline: none;
+  border-color: #2563EB;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* ===================================
+   BUTTONS
+   =================================== */
+
+.btn-outline {
+  padding: 10px 20px;
+  background: white;
+  border: 1px solid #D1D5DB;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background: #F9FAFB;
+  border-color: #2563EB;
+  color: #2563EB;
+}
+
+.btn-danger {
+  padding: 10px 20px;
+  background: #FEF2F2;
+  border: 1px solid #FCA5A5;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #DC2626;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-danger:hover {
+  background: #DC2626;
+  border-color: #DC2626;
+  color: white;
+}
+
+/* ===================================
+   THEME OPTIONS
+   =================================== */
+
+.theme-options {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.theme-btn {
+  flex: 1;
+  padding: 14px 20px;
+  background: #F9FAFB;
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.theme-btn:hover {
+  background: #EFF6FF;
+  border-color: #BFDBFE;
+}
+
+.theme-btn.active {
+  background: #EFF6FF;
+  border-color: #2563EB;
+  color: #2563EB;
+}
+
+/* ===================================
+   HELP LINKS
+   =================================== */
+
+.help-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.help-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.help-link:hover {
+  background: #EFF6FF;
+  border-color: #BFDBFE;
+  color: #2563EB;
+  transform: translateX(4px);
+}
+
+.help-link .arrow {
+  font-size: 18px;
+  color: #9CA3AF;
+  transition: all 0.2s;
+}
+
+.help-link:hover .arrow {
+  color: #2563EB;
+  transform: translateX(4px);
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+@media (max-width: 1024px) {
+  .settings-container {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .settings-container {
+    padding: 24px 20px;
+  }
+
+  .settings-title {
+    font-size: 24px;
+  }
+
+  .settings-card {
+    padding: 20px;
+  }
+
+  .card-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .theme-options {
+    flex-direction: column;
+  }
+
+  .setting-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .toggle-switch {
+    align-self: flex-end;
+  }
+}
