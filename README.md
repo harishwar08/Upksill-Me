@@ -1,4 +1,4 @@
-# SkillSwapHub 🎓✨
+# UpSkill Me
 
 > Teach what you know. Learn what you need. Swap skills. Grow together.
 
@@ -6,7 +6,7 @@ SkillSwapHub is a peer-to-peer skill-exchange platform where users trade their t
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -20,7 +20,7 @@ SkillSwapHub is a peer-to-peer skill-exchange platform where users trade their t
 
 ---
 
-## ✨ Features
+##  Features
 
 ### Core Features
 - **User Authentication** - Secure signup/login with JWT tokens
@@ -38,7 +38,7 @@ SkillSwapHub is a peer-to-peer skill-exchange platform where users trade their t
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React 18** - UI library
@@ -74,7 +74,7 @@ SkillSwapHub is a peer-to-peer skill-exchange platform where users trade their t
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 SkillSwapHub/
@@ -105,7 +105,7 @@ SkillSwapHub/
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -132,7 +132,7 @@ npm install
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Backend Environment Variables
 Create a `.env` file in the `backend` directory:
@@ -167,7 +167,7 @@ VITE_APP_NAME=SkillSwapHub
 
 ---
 
-## 🏃 Running the Application
+##  Running the Application
 
 ### Start Backend Server
 ```bash
@@ -196,7 +196,7 @@ npm start
 
 ---
 
-## 📚 API Documentation
+## API Documentation
 
 ### Authentication Endpoints
 - `POST /api/auth/register` - Register new user
@@ -246,7 +246,7 @@ npm start
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -258,27 +258,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-
-## 👨‍💻 Author
-
-Your Name - [GitHub Profile](https://github.com/yourusername)
-
----
-
-## 🙏 Acknowledgments
-
-- Thanks to all contributors
-- Inspired by the spirit of collaborative learning
-- Built with passion for education and community
-
----
-
-## 📧 Contact
 
 For questions or suggestions, please open an issue or contact at your.email@example.com
 
